@@ -1,12 +1,12 @@
-name: Build and deploy .NET Core app to Windows WebApp ContosoCraftsZap
+name: Build and deploy .NET Core app to Windows WebApp ContosoCraftsWebsite20211020193951
 on:
   push:
     branches:
     - main
 env:
-  AZURE_WEBAPP_NAME: ContosoCraftsZap
+  AZURE_WEBAPP_NAME: ContosoCraftsWebsite20211020193951
   AZURE_WEBAPP_PACKAGE_PATH: ContosoCrafts.Website/publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.ContosoCraftsZap_0ed8 }}
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.CONTOSOCRAFTSZAP_0ED8 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
   WORKING_DIRECTORY: ContosoCrafts.Website
